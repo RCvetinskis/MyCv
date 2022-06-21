@@ -1,0 +1,85 @@
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to bottom, black, rgba(0,0,0,0));
+    padding: 15px;
+    position: fixed;
+     top: 0;
+    width: 100%;
+   
+}
+
+#side-menu {
+    display: block;
+    width: 100px;
+    height:  350px;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    background: linear-gradient(to bottom, black, rgba(0,0,0,0));
+}
+.translate {
+    transform: translateX(0)!important;
+}
+.rotate {
+    transform: rotateZ(-90deg);
+}
+nav a {
+    position: relative;
+    display: block;
+    color: orange;
+    padding: 15px;
+
+}
+#burger:before {
+    display: none;
+}
+nav a:before {
+    position: absolute;
+    content: "";
+    bottom: 10%;
+    left: 50%;
+    height: 2px;
+    width: 5%;
+    background-color: transparent;
+    transition: 0.3s;
+}
+nav a:hover:before {
+   transform: scaleX(20);
+    background-color: orange;
+}
+#burger{
+    display: none;
+    transition: transform 0.3s;
+}
+#side-menu a:before{
+    left: 40%;
+}
+/* sukuri klase kuria panaudosi JS toggle */
+
+@media (max-width:760px){
+    #side-menu {
+        flex-direction: column;
+       display: block;
+    }
+    #side-menu a {
+      
+       display: block;
+    }
+    nav a {
+        display: none;
+    }
+
+   
+
+    #burger {
+        display: block;
+        font-size: 1.5em;
+        
+    }
+    nav{
+        justify-content: space-between;
+        width: 97%;
+    }
+}

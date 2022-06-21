@@ -1,0 +1,50 @@
+.repo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 45vh;
+    color: #f2f2f2;
+    font-size: 1.3em;
+   
+}
+.repo-container h2{
+    font-size: 3em;
+}
+
+.card ul li{
+    margin: 9px;
+    border-radius: 8px;
+   
+}
+.card ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.repo{
+    color: #f2f2f2;
+    background-color: black;
+   padding: 3px;
+   display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right:  10px;
+    margin-bottom: 10px;
+    font-size: 0.7em;
+ 
+}
+@media(max-width:760px){
+    .repo-container{
+        height: 100%;
+    }
+    .repo-container h2{
+        font-size: 1.4em;
+    }
+    
+   
+}
+
+
